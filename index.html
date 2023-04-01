@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang = ko>
+<head>
+    <title>hazyGreen Notes</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color:#111111;
+            color: white;
+            text-align:center;
+        }
+
+        h1 {
+            color: #BCB88A  
+        }
+
+        .bg_effect {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Preparing to this.Page</h1>
+    <p>곧 만나요!</p>
+
+    <canvas class="bg_effect"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">    </script>
+    <script>
+        window.onload = function() {
+            Particles.init({
+            selector: '.bg_effect',
+            maxParticles: 77,
+            speed: 1.7,
+            color: ["FFFFFF", "777777", "00498C", "#BCB88A"],
+            connectParticles: true
+            });
+        };
+    </script>
+
+</body>
+
+</html>
